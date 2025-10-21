@@ -152,7 +152,7 @@ However, if a notification request popup appears during the test, close it or cl
 
     **Note that**: If you want to run **only test case 1 (TC_01)**, you can click the checkmark in front of the test case name in VS Code.
 
-    ![alt text](onlyOneTest.png)
+    ![alt text](Qsquad_test/onlyOneTest.png)
 
     Otherwise, you can also run each test case individually using the command below:
         
@@ -172,7 +172,7 @@ However, if a notification request popup appears during the test, close it or cl
 
     **Note that**: If you want to run **only test case 1 (TC_01)**, you can click the checkmark in front of the test case name in VS Code.
 
-    ![alt text](onlyOneTest.png)็
+    ![alt text](Qsquad_test/onlyOneTest.png)็
 
     Otherwise, you can also run each test case individually using the command below:
 
@@ -194,19 +194,19 @@ After the test is completed, Robot Framework will generate two files that you ca
     - **Test Details** : A table *listing the names of all test cases*, their *status*, and *execution time* for each test case.
 
         - **If all tests pass**, the *background will be green* to indicate that everything passed successfully.
-            ![alt text](greenReport.png)
+            ![alt text](Qsquad_test/greenReport.png)
 
         - **If there are any test cases that fail**, the *background will turn red*, indicating that some tests did not pass.
-            ![alt text](redReport.png)
+            ![alt text](Qsquad_test/redReport.png)
 
 
 - ### log.html 
     shows similar results to **report.html**, but it provides much *more detailed information*.
     - Each test case is broken down to show which keyword failed, with details for every keyword used.
-    ![alt text](logFailed.png)
+    ![alt text](Qsquad_test/logFailed.png)
     - It also shows the time taken for each keyword.
-    ![alt text](log.png)
-    ![alt text](log_detail.png)
+    ![alt text](Qsquad_test/log.png)
+    ![alt text](Qsquad_test/log_detail.png)
 
     However, **log.html** does not include *Summary Information* or *background color indicators* like **report.html**.
 
