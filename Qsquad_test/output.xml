@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.9.6 on win32)" generated="2025-10-21T15:14:36.879017" rpa="false" schemaversion="5">
+<suite id="s1" name="fbLogin" source="C:\Users\Mntxp\Dropbox\PC\Downloads\Qsquad_test\fbLogin.robot">
+<test id="s1-t1" name="TC_01 : Facebook Login Success" line="49">
+<kw name="Open the website">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-21T15:14:37.604224" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-21T15:14:37.604224" elapsed="3.738706"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<status status="PASS" start="2025-10-21T15:14:37.602205" elapsed="3.740725"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-10-21T15:14:41.344583" elapsed="0.119587"/>
+</kw>
+<kw name="Login to Facebook">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-21T15:14:41.465925" level="INFO">Typing text 'mnty.test@gmail.com' into text field 'id=email'.</msg>
+<arg>${input-user}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-21T15:14:41.465925" elapsed="0.243053"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-21T15:14:41.708978" level="INFO">Typing text 'Mnty19999' into text field 'id=pass'.</msg>
+<arg>${input-pass}</arg>
+<arg>${pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-21T15:14:41.708978" elapsed="0.185124"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Login_btn}</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-21T15:14:41.894102" elapsed="0.045913"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-21T15:14:41.940015" level="INFO">Clicking button 'name=login'.</msg>
+<arg>${Login_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-21T15:14:41.940015" elapsed="0.234639"/>
+</kw>
+<arg>${correct-USERNAME}</arg>
+<arg>${correct-PASSWORD}</arg>
+<status status="PASS" start="2025-10-21T15:14:41.464170" elapsed="0.710484"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-21T15:14:47.178815" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-21T15:14:42.174654" elapsed="5.004161"/>
+</kw>
+<kw name="Verify Login Successful">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//div[@role='main']</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-21T15:14:47.182864" elapsed="21.075781"/>
+</kw>
+<status status="PASS" start="2025-10-21T15:14:47.180840" elapsed="21.077805"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-21T15:15:13.259276" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-21T15:15:08.258645" elapsed="5.001148"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-21T15:15:13.259793" elapsed="2.495318"/>
+</kw>
+<status status="PASS" start="2025-10-21T15:14:37.600185" elapsed="38.154926"/>
+</test>
+<test id="s1-t2" name="TC_02 : Login Failed - Incorrect Password" line="57">
+<kw name="Open the website">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-21T15:15:15.761270" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-21T15:15:15.755111" elapsed="3.665809"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<status status="PASS" start="2025-10-21T15:15:15.755111" elapsed="3.665809"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-10-21T15:15:19.420920" elapsed="0.070945"/>
+</kw>
+<kw name="Login to Facebook">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-21T15:15:19.496205" level="INFO">Typing text 'mnty.test@gmail.com' into text field 'id=email'.</msg>
+<arg>${input-user}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-21T15:15:19.496205" elapsed="0.241656"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-21T15:15:19.739558" level="INFO">Typing text 'mon1234' into text field 'id=pass'.</msg>
+<arg>${input-pass}</arg>
+<arg>${pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-21T15:15:19.737861" elapsed="0.180136"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Login_btn}</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-21T15:15:19.918786" elapsed="0.040083"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-21T15:15:19.959972" level="INFO">Clicking button 'name=login'.</msg>
+<arg>${Login_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-21T15:15:19.959416" elapsed="0.210279"/>
+</kw>
+<arg>${correct-USERNAME}</arg>
+<arg>${incorrect-password}</arg>
+<status status="PASS" start="2025-10-21T15:15:19.493017" elapsed="0.676678"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-21T15:15:25.177219" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-21T15:15:20.169695" elapsed="5.007524"/>
+</kw>
+<kw name="Verify Login Failed">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Login_btn}</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-21T15:15:25.181245" elapsed="25.207855"/>
+</kw>
+<status status="PASS" start="2025-10-21T15:15:25.181245" elapsed="25.213422"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-21T15:15:55.406706" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-21T15:15:50.396072" elapsed="5.010634"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-21T15:15:55.406706" elapsed="2.511946"/>
+</kw>
+<status status="PASS" start="2025-10-21T15:15:15.755111" elapsed="42.165563"/>
+</test>
+<test id="s1-t3" name="TC_03 : Login Failed - Username not found" line="65">
+<kw name="Open the website">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-21T15:15:57.924708" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-21T15:15:57.924708" elapsed="4.925852"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<status status="PASS" start="2025-10-21T15:15:57.924708" elapsed="4.926420"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-10-21T15:16:02.852335" elapsed="0.094814"/>
+</kw>
+<kw name="Login to Facebook">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-21T15:16:02.950827" level="INFO">Typing text 'any' into text field 'id=email'.</msg>
+<arg>${input-user}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-21T15:16:02.950827" elapsed="0.214252"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-21T15:16:03.173063" level="INFO">Typing text 'Mnty19999' into text field 'id=pass'.</msg>
+<arg>${input-pass}</arg>
+<arg>${pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-21T15:16:03.173063" elapsed="0.211144"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Login_btn}</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-21T15:16:03.384207" elapsed="0.046456"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-21T15:16:03.430663" level="INFO">Clicking button 'name=login'.</msg>
+<arg>${Login_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-21T15:16:03.430663" elapsed="0.239066"/>
+</kw>
+<arg>${incorrect-username}</arg>
+<arg>${correct-PASSWORD}</arg>
+<status status="PASS" start="2025-10-21T15:16:02.948389" elapsed="0.721340"/>
+</kw>
+<kw name="Verify Login Failed">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Login_btn}</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-21T15:16:03.672593" elapsed="18.518896"/>
+</kw>
+<status status="PASS" start="2025-10-21T15:16:03.669729" elapsed="18.522995"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-21T15:16:27.209638" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-21T15:16:22.192724" elapsed="5.016914"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-21T15:16:27.209638" elapsed="2.470119"/>
+</kw>
+<status status="PASS" start="2025-10-21T15:15:57.924708" elapsed="31.755049"/>
+</test>
+<test id="s1-t4" name="TC_04 : Facebook Logout" line="72">
+<kw name="Open the website">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-21T15:16:29.684316" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-21T15:16:29.684316" elapsed="5.093884"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<status status="PASS" start="2025-10-21T15:16:29.684316" elapsed="5.093884"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-10-21T15:16:34.782332" elapsed="0.092727"/>
+</kw>
+<kw name="Login to Facebook">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-21T15:16:34.877147" level="INFO">Typing text 'mnty.test@gmail.com' into text field 'id=email'.</msg>
+<arg>${input-user}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-21T15:16:34.877147" elapsed="0.274436"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-21T15:16:35.151583" level="INFO">Typing text 'Mnty19999' into text field 'id=pass'.</msg>
+<arg>${input-pass}</arg>
+<arg>${pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-21T15:16:35.151583" elapsed="0.206958"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Login_btn}</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-21T15:16:35.358541" elapsed="0.050629"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-21T15:16:35.409170" level="INFO">Clicking button 'name=login'.</msg>
+<arg>${Login_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-21T15:16:35.409170" elapsed="0.222959"/>
+</kw>
+<arg>${correct-USERNAME}</arg>
+<arg>${correct-PASSWORD}</arg>
+<status status="PASS" start="2025-10-21T15:16:34.875059" elapsed="0.757070"/>
+</kw>
+<kw name="Logout from Facebook">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//div[@aria-label='Your profile']</arg>
+<arg>40s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-21T15:16:35.634624" elapsed="38.760352"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-21T15:17:17.398132" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-21T15:17:14.394976" elapsed="3.003156"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-21T15:17:17.400138" level="INFO">Clicking element 'xpath=//div[@aria-label='Your profile']'.</msg>
+<arg>xpath=//div[@aria-label='Your profile']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-21T15:17:17.398132" elapsed="0.260953"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-21T15:17:19.665339" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-21T15:17:17.659085" elapsed="2.006254"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Logout_btn}</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-21T15:17:19.665339" elapsed="0.031812"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-21T15:17:19.697151" level="INFO">Clicking element 'xpath=//span[text()='Log out']'.</msg>
+<arg>${Logout_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-21T15:17:19.697151" elapsed="0.190372"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//body[contains(@class,'UIPage_LoggedOut')]</arg>
+<arg>40s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-10-21T15:17:19.887523" elapsed="2.162734"/>
+</kw>
+<status status="PASS" start="2025-10-21T15:16:35.634624" elapsed="46.415633"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-21T15:17:27.055872" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-21T15:17:22.050257" elapsed="5.005615"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-21T15:17:27.055872" elapsed="2.569858"/>
+</kw>
+<status status="PASS" start="2025-10-21T15:16:29.682374" elapsed="59.943356"/>
+</test>
+<status status="PASS" start="2025-10-21T15:14:36.882541" elapsed="172.746390"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="fbLogin" id="s1" pass="4" fail="0" skip="0">fbLogin</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
